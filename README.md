@@ -1,10 +1,18 @@
 # AI Coding Knowledge Framework
 
-Static GitHub Pages version of `ai-coding-knowledge-framework.html`.
+Static GitHub Pages version of the AI engineering discipline knowledge framework.
 
-## Review Notes
+## V2 Pages
 
-- Fixed the source count from 12 to 16 to match the referenced materials.
-- Added direct links to all sources in the footer.
-- Added missing source entries for matklad's control-flow note and Yuan et al. OSDI 2014.
-- Removed the copied Cloudflare Insights beacon script so the page is a clean static HTML page.
+- `index.html`: version selector and compact 16-source ledger.
+- `research.html`: recommended research archive layout.
+- `magazine.html`: editorial long-scroll layout.
+- `blueprint.html`: engineering blueprint console layout.
+- `assets/v2.css`: shared visual system.
+- `scripts/build-v2-pages.mjs`: source-of-truth generator for all four pages.
+
+## Validation
+
+- `npx --yes html-validate index.html research.html magazine.html blueprint.html`
+- Each page includes 16 source links with `target="_blank"` and `rel="noopener noreferrer"`.
+- The generated pages do not include tracking scripts.
